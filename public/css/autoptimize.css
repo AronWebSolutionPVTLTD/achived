@@ -1,7 +1,26 @@
+/* new css*/
+.srd-diagram {
+    position: unset !important;
+}
+.form-inputs{
+	border-radius: 0px !important;
+    border: 2px solid #5718a5 !important;
+}
+/***/
 /* my css */
 
-p.center_we_are {
-    text-align: justify;
+.visiblty.order-lg-first {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+h1.navbar-brand a img {
+    vertical-align: top;
+}
+
+#contact #wpcf7-f301-p476-o1 {
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .achive-heading {
@@ -111,7 +130,7 @@ section.browse-roadmap {
 }
 
 .ct-process img {
-	background-color: #FFFFFF;
+	background-color: #f7f1ff;
 	padding: 14px;
 	margin: auto;
 	margin-top: 0px;
@@ -122,8 +141,7 @@ section.browse-roadmap {
 	-webkit-transition: 0.4s all ease;
 	-o-transition: 0.4s all ease;
 	transition: 0.4s all ease;
-	background: url("/images/process-circle.jpg") no-repeat center center;
-	/* background-size: cover; */
+	    width: 172px;	
 }
 .img-circle {
     border-radius: 50%;
@@ -142,12 +160,14 @@ section.browse-roadmap {
 	color: #2b8be9;
 }
 span.ct-process-right {
-    background: #efe4ff;
+    background: #4b78d2;
     padding: 5px 16px;
+    float: left;
 }
 span.ct-process-left {
-    background: #efe4ff;
+    background: #4b47b2;
     padding: 5px 16px;
+    float: right;
 }
 .serch-heading .vc_custom_1520830144361 {
     padding-bottom: 0px !important;
@@ -19284,8 +19304,8 @@ body {
 }
 
 body {
-	background: #0b0c22;
-	color: #fff
+	background: #0b0c22 !important;
+	color: #fff !important;
 }
 
 body.theme-light,
@@ -19484,7 +19504,7 @@ h6+.image:not([class*="mt-"]),
 
 h1,
 .h1 {
-	font-size: 2.93em
+	font-size: 2.93em !important; 
 }
 
 h2,
@@ -19699,13 +19719,30 @@ a:active {
 }
 
 .section-bg-alt {
-	background: #0b0c22
+	background: #f7f1ff;
 }
-
+section#who_we_are p {
+    color: #28384c;
+}
+section#who_we_are h2 {
+    color: #000;
+}
 .theme-light .section-bg-alt {
-	background: #fff
+	background: #28384c;
 }
-
+.team-info h5 {
+    color: #28384c;
+}
+img.left-q {
+    width: 30px;
+	padding: 0 9px 0 0;
+    margin: -14px 0 0 0;
+}
+img.right-q {
+    width: 30px;
+	    padding-left: 10px;
+    margin-top: 10px;
+}
 .section-bg-blend {
 	background-image: linear-gradient(to bottom, #0e122f 0%, #0b0c22 70%)
 }
@@ -22227,7 +22264,7 @@ hr:last-child,
 	position: relative;
 	z-index: 2;
 	-ms-border-radius: 40px;
-	border-radius: 40px;
+	border-radius: 40px !important;
 	background-image: -webkit-linear-gradient(left, #2b56f5 0%, #46bdf4 100%);
 	background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)
 }
@@ -22927,7 +22964,7 @@ hr:last-child,
 
 .single-roadmap:before {
 	background-image: -webkit-linear-gradient(top, #46bdf4 0%, #7a0fff 100%);
-	background-image: linear-gradient(top, #46bdf4 0%, #7a0fff 100%);
+	/*background-image: linear-gradient(top, #46bdf4 0%, #7a0fff 100%);*/
 	position: absolute;
 	content: "";
 	left: 0;
@@ -22981,7 +23018,7 @@ hr:last-child,
 
 .single-roadmap.roadmap-down:before {
 	background-image: -webkit-linear-gradient(top, #7a0fff 0%, #46bdf4 100%);
-	background-image: linear-gradient(top, #7a0fff 0%, #46bdf4 100%);
+	/*background-image: linear-gradient(top, #7a0fff 0%, #46bdf4 100%);*/
 	position: absolute;
 	content: "";
 	left: 0;
@@ -23029,7 +23066,7 @@ hr:last-child,
 
 .theme-light .single-roadmap:before {
 	background-image: -webkit-linear-gradient(top, #2b56f5 0%, #7a0fff 100%);
-	background-image: linear-gradient(top, #2b56f5 0%, #7a0fff 100%)
+	/*background-image: linear-gradient(top, #2b56f5 0%, #7a0fff 100%)*/
 }
 
 .theme-light .single-roadmap:after {
@@ -23044,7 +23081,7 @@ hr:last-child,
 
 .theme-light .single-roadmap.roadmap-down:before {
 	background-image: -webkit-linear-gradient(top, #7a0fff 0%, #2b56f5 100%);
-	background-image: linear-gradient(top, #7a0fff 0%, #2b56f5 100%)
+	/*background-image: linear-gradient(top, #7a0fff 0%, #2b56f5 100%)*/
 }
 
 @media only screen and (min-width: 992px) {
@@ -23763,10 +23800,9 @@ hr:last-child,
 }
 
 .contact-info {
-    margin: 0 -30px !important;
+	 margin: 0 -30px !important;
     display: flex;
-    justify-content: center;
-}
+    justify-content: center;}
 
 .contact-info li {
 	margin: 0 30px
@@ -26188,7 +26224,8 @@ a:active {
 }
 
 .btn.btn-plane {
-	background: #7a0fff
+	background: #7a0fff;
+	margin-top:4px;
 }
 
 .play-btn .play {
@@ -26298,7 +26335,7 @@ a:active {
 
 .single-roadmap:before {
 	background-image: -webkit-linear-gradient(top, #46bdf4 0%, #7a0fff 100%);
-	background-image: linear-gradient(top, #46bdf4 0%, #7a0fff 100%)
+	/*background-image: linear-gradient(top, #46bdf4 0%, #7a0fff 100%)*/
 }
 
 .single-roadmap:after {
@@ -26311,12 +26348,12 @@ a:active {
 
 .single-roadmap.roadmap-down:before {
 	background-image: -webkit-linear-gradient(top, #7a0fff 0%, #46bdf4 100%);
-	background-image: linear-gradient(top, #7a0fff 0%, #46bdf4 100%)
+	/*background-image: linear-gradient(top, #7a0fff 0%, #46bdf4 100%)*/
 }
 
 .theme-dark .single-roadmap:before {
 	background-image: -webkit-linear-gradient(top, #46bdf4 0%, #7a0fff 100%);
-	background-image: linear-gradient(top, #46bdf4 0%, #7a0fff 100%)
+	/*background-image: linear-gradient(top, #46bdf4 0%, #7a0fff 100%)*/
 }
 
 .theme-dark .single-roadmap:after {
@@ -26329,12 +26366,12 @@ a:active {
 
 .theme-dark .single-roadmap.roadmap-down:before {
 	background-image: -webkit-linear-gradient(top, #7a0fff 0%, #46bdf4 100%);
-	background-image: linear-gradient(top, #7a0fff 0%, #46bdf4 100%)
+	/*background-image: linear-gradient(top, #7a0fff 0%, #46bdf4 100%)*/
 }
 
 .theme-light .single-roadmap:before {
 	background-image: -webkit-linear-gradient(top, #2b56f5 0%, #7a0fff 100%);
-	background-image: linear-gradient(top, #2b56f5 0%, #7a0fff 100%)
+	/*background-image: linear-gradient(top, #2b56f5 0%, #7a0fff 100%)*/
 }
 
 .theme-light .single-roadmap:after {
@@ -26347,7 +26384,7 @@ a:active {
 
 .theme-light .single-roadmap.roadmap-down:before {
 	background-image: -webkit-linear-gradient(top, #7a0fff 0%, #2b56f5 100%);
-	background-image: linear-gradient(top, #7a0fff 0%, #2b56f5 100%)
+	/*background-image: linear-gradient(top, #7a0fff 0%, #2b56f5 100%)*/
 }
 
 .single-roadmap-alt:before {
@@ -26421,7 +26458,7 @@ a:active {
 
 .team-member .team-photo:after {
 	background-image: -webkit- linear-gradient(to right, #2b56f5 0%, #46bdf4 100%);
-	background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)
+	/*background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)*/
 }
 
 .team-member .team-title {
@@ -26434,7 +26471,7 @@ a:active {
 
 .team-hex .team-info:before {
 	background-image: -webkit- linear-gradient(to right, #2b56f5 0%, #46bdf4 100%);
-	background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)
+	/*background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)*/
 }
 
 .team-hex .team-title {
@@ -26443,7 +26480,7 @@ a:active {
 
 .team-described .team-title:after {
 	background-image: -webkit- linear-gradient(to right, #2b56f5 0%, #46bdf4 100%);
-	background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)
+	/*background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)*/
 }
 
 .team-described .team-social li a {
@@ -26472,7 +26509,7 @@ a:active {
 
 .contact-info li .fa {
 	background-image: -webkit- linear-gradient(to right, #2b56f5 0%, #46bdf4 100%);
-	background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)
+	/*background-image: linear-gradient(to right, #2b56f5 0%, #46bdf4 100%)*/
 }
 
 .form-message .input-field .input-line {
@@ -55092,6 +55129,13 @@ footer.footer-section{padding-top:0px;}
 .hidden{
 	display: none;
 }
+.visiblty{
+  visibility: visible !important; 
+  animation-delay: 0.5s;
+}
+.registervisible{
+  visibility: visible !important; 
+}
 .visibl{
 	visibility: visible;
 	animation-delay: 0.3s;
@@ -55109,6 +55153,25 @@ footer.footer-section{padding-top:0px;}
 }
 #preloader{
 	display: none !important;
+}
+.ponit{
+  left:25%;
+  color: #fff;
+}
+.ponit1{
+  left:55%;
+  color: #fff;
+}
+.ponit2{
+  left:80%;
+  color: #fff;
+}
+.vc_empty_space{
+height: 50%;
+}
+
+.animated:not(.vc_grid-item) {
+    visibility: visible !important;
 }
 
 @media (max-width:768px) {

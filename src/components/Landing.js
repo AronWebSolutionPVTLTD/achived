@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 //import Layout from './../Layout/Layout';
 import Footer from './../Layout/Footer';
+import Contact from './Contact';
 import $ from "jquery";
 class Landing extends Component {
 constructor(props){
   super(props);
   this.state={
   email:'',
-  name:'',
+  firstname:'',
+  lastname:'',
   message: '',
   mailchimpemail:'',
   setposition: false,
@@ -20,7 +22,11 @@ constructor(props){
   this.handlemailchimpSubmit = this.handlemailchimpSubmit.bind(this);
   this.handleScroll = this.handleScroll.bind(this);
  }
-
+//0xA4Cf0F68d8FBA18f59c42274d8a591bAAA02641a
+//0xA4Cf0F68d8FBA18f59c42274d8a591bAAA02641a
+//0x56aaae6d931868b101a899af57cdb348213fae1e2dc2c005612e56953b7ca4d7
+//0x84A9f6D80eBAbaa0a3c7922c89025886825C315F
+//0xd253992f6CFf44e064153b38F5D0244365076A72
 componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
 }
@@ -103,11 +109,11 @@ const { setposition } =this.state;
                   </button>
                   <div className="navbar-collapse justify-content-end">
                      <ul id="menu-onepage-menu" className="navbar-nav">
-                        <li className="active"><a href="/#login" className="nav-link">Login\MyFunds</a></li>
-                        <li><a href="/#about" className="nav-link">What Is Achieved</a></li>
-                        <li><a href="/#roadmap" className="nav-link">Browse Roadmaps</a></li>
+                        <li><a href="/#what_is_achieved" className="nav-link">What Is Achieved</a></li>
+                        <li><a href="/#browse-roadmap" className="nav-link">View ROADMAP</a></li>
                         <li><a href="/#contact" className="nav-link">contact startups</a></li>
-                       
+                        <li><a href="/#who_we_are" className="nav-link">Who We ARE</a></li>
+                            
                      </ul>
                      <ul className="navbar-nav navbar-btns">
                        
@@ -117,57 +123,71 @@ const { setposition } =this.state;
                </nav>
             </div>
          </header>
-        <section id="login" className="row wpb_row vc_row-fluid mobile-center banner-particle banner-curb banner-full vc_row-o-equal-height vc_row-o-content-middle vc_row-flex banner d-flex align-items-center">
+        <section id="login" className="vc_rows wpb_row vc_row-fluid mobile-center banner-particle banner-curb banner-full vc_row-o-equal-height vc_row-o-content-middle vc_row-flex banner d-flex align-items-center">
             <div id="particles-js" className="particles-container particles-js">
             <canvas className="particles-js-canvas-el" width="1349" height="413"></canvas>
             </div>
             <div className="container">
                <div className="banner-content">
                   <div className="row">
-                     <div data-animate="fadeInUp" data-delay="0.65" className="order-lg-first wpb_column vc_column_container vc_col-sm-12 col-lg-6 col-md-6 animated fadeInUp landingvisible">
+                     <div data-animate="fadeInUp" data-delay="0.65" className="visiblty order-lg-first wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6 animated fadeInUp">
                         <div className="vc_column-inner ">
                            <div className="wpb_wrapper">
                               <div className="wpb_text_column wpb_content_element  vc_custom_1520825700169">
                                  <div className="wpb_wrapper">
-                                    <h1 className="powerdata">Powering Data for the new equity blockchain</h1>
-                                    <p className="lead color-secondary">Global decentralize network to buy &amp; sell shares</p>
+                                    <h1 className="powerdata">Linking investments to verified milestones</h1>
+                                    <p className="lead color-secondary">shielding the investor's funds from fraudulent acts and lack of project execution.</p>
                                     <ul className="btns">
-                                       <li><a className="btn" href="/">Sign up to Join</a></li>
-                                       <li><a className="btn btn-alt" href="/">TOKEN DISTRIBUTION</a></li>
+                                       <li><a className="btn" href="/register">Sign up to Join</a></li>
+                                       
                                     </ul>
                                  </div>
                               </div>
                               <ul className="social">
-                                 <li><a href="/"><em className="fa fa-facebook"></em></a></li>
-                                 <li><a href="/"><em className="fa fa-twitter"></em></a></li>
-                                 <li><a href="/"><em className="fa fa-youtube-play"></em></a></li>
-                                 <li><a href="/"><em className="fa fa-github"></em></a></li>
-                                 <li><a href="/"><em className="fa fa-btc"></em></a></li>
-                                 <li><a href="/"><em className="fa fa-medium"></em></a></li>
+                                <li><a href="/"><em className="fa fa-linkedin"></em></a></li>
+                                <li><a href="/"><em className="fa fa-github"></em></a></li>
                               </ul>
                            </div>
                         </div>
                      </div>
-                     <div data-animate="fadeInRight" data-delay=".9" className="order-first wpb_column vc_column_container col-sm-12 col-md-offset-1 col-md-5 animated fadeInRight">
-                        <div className="vc_column-inner ">
-                           <div className="wpb_wrapper">
-                              <div className="countdown-box text-center countdown-header">
-                                 <span className="extra-line"></span>        
-                                 <h6>Achieved Sale Is Open. Closing In</h6>
-                                 <div className="token-countdown d-flex align-content-stretch" data-date="2019/10/06"><div className="col"><span className="countdown-time">07</span><span className="countdown-text">Days</span></div><div className="col"><span className="countdown-time">13</span><span className="countdown-text">Hours</span></div><div className="col"><span className="countdown-time">01</span><span className="countdown-text">Minutes</span></div><div className="col"><span className="countdown-time countdown-time-last">28</span><span className="countdown-text">Seconds</span></div></div>
-                                 <div className="token-status-bar">
-                                    <div className="token-status-percent"></div>
-                                    <span className="token-status-point ponit">pre-sale</span>
-                                    <span className="token-status-point ponit1">soft cap</span>
-                                    <span className="token-status-point ponit2">bonus</span>
+             
+                  </div>
+               </div>
+            </div>
+            <div className="clearfix"></div>
+         </section>
+
+    <section id="what_is_achieved" className="wpb_row vc_row-fluid sectiosection section-pad section-bg section-light section-connect">
+            <div className="container">
+               <div className="row">
+                  <div className="wpb_column vc_column_container col-sm-12">
+                     <div className="vc_column-inner ">
+                        <div className="wpb_wrapper">
+                           <div className="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1520830144361">
+                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 animated fadeInUp visiblty">
+                                 <div className="vc_column-inner ">
+                                    <div className="wpb_wrapper">
+                                       <div className="section-head text-center">
+                                          <h2 className="section-title">
+                                             What is Achieved<span>ACHIEVED</span>        
+                                          </h2>
+                                       </div>
+                                       <div className="vc_empty_space"><span className="vc_empty_space_inner"></span></div>
+                                    </div>
                                  </div>
-                                 <a className="btn btn-alt btn-sm" href="/" target="_self">Purchase TOKEN NOW</a>                
-                                 <ul className="icon-list">
-                                    <li><em className="fa fa-btc"></em></li>
-                                    <li><em className="fa fa-krw"></em></li>
-                                    <li><em className="fa fa-cc-visa"></em></li>
-                                    <li><em className="fa fa-cc-mastercard"></em></li>
-                                 </ul>
+                              </div>
+                           </div>
+                           <div className="row wpb_row vc_inner vc_row-fluid">
+                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container col-sm-12 animated fadeInUp visiblty">
+                                 <div className="vc_column-inner ">
+                                    <div className="wpb_wrapper">
+                                       <div>
+                    Achieved &#8482; links investments and project shares to a blockchain technology platform.
+The platform provides a real-time overview of the project's roadmap and an efficient communication channel between both parties. The invested funds will be exchanged for the project shares, protecting both funds and shares, thus incentivize the delivery of a successful project execution.
+                    </div>
+                      
+                                    </div>
+                                 </div>
                               </div>
                            </div>
                         </div>
@@ -177,22 +197,24 @@ const { setposition } =this.state;
             </div>
             <div className="clearfix"></div>
          </section>
+
+
+
          <section id="about" className="vc_row wpb_row vc_row-fluid section-pad section-bg-alt nopb about-achived">
           <div className="container">
             <div className="row">
-              <div className="col-md-3"></div>
-              <div className="wpb_column vc_column_container col-sm-8 col-md-offset-3 col-md-6 col-sm-offset-2">
+              <div className="wpb_column vc_column_container vc_col-sm-8 col-md-offset-3 vc_col-md-12 col-sm-offset-2">
                 <div className="vc_column-inner ">
                   <div className="wpb_wrapper">
                     <div className="wpb_text_column wpb_content_element  text-center">
                       <div className="wpb_wrapper">
                         <div className="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1520830144361">
-                          <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 animated fadeInUp">
+                          <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 animated fadeInUp visiblty">
                            <div className="vc_column-inner">
                               <div className="wpb_wrapper">
                                  <div className="section-head text-center">
                                     <h2 className="section-title">
-                                       What Is Achieved<span>Achieved</span>        
+                                       Why Achieved<span>Achieved</span>        
                                     </h2>
                                  </div>
                                  <div className="vc_empty_space">
@@ -208,209 +230,115 @@ const { setposition } =this.state;
           </div>
           <div className="col-md-12">
             <div className="ct-process">
-              <div className="row">
-                <div className="col-md-4 text-center animated activate bounceIn undefined" data-fx="bounceIn" data-time="50">
-                  <a href="/"><img className="img-circle img-responsive" src="images/research.jpg" alt="Research" /></a>
-                  <div className="shadow"></div>
-                       
+                <div className="row">
+                    <div className="display-table">
+                        <div className="hidden-sm table-cell ct-process-icon">
+                            <span className="ct-process-right"><i className="fa fa-hand-o-right"></i></span>
+                        </div>
+                        <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="50">
+                            <a href="/"><img className="img-responsive" src="images/success3.png" alt="Research"/></a>
+                            
+                           
+                        </div>
+                        <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="150">
+                            <a href="/"><img className="img-responsive" src="images/security2.png" alt="Idea"/></a>
+                           
+                            
+                        </div>
+                        <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="250">
+                            <a href="/"><img className="img-responsive" src="images/communication3.png" alt="Solution" /></a>
+                            
+                           
+                        </div>
+                        <div className="hidden-sm table-cell ct-process-icon">
+                            <span className="ct-process-left"><i className="fa fa-trophy"></i></span>
+                        </div>
+                    </div>
+                    <div className="clearfix"></div>
                 </div>
-                <div className="col-md-4 text-center animated activate bounceIn undefined" data-fx="bounceIn" data-time="150">
-                  <a href="/"><img className="img-circle img-responsive" src="images/idea.jpg" alt="Idea" /></a>
-                    <div className="shadow"></div>       
-                </div>
-                <div className="col-md-4 text-center animated activate bounceIn undefined" data-fx="bounceIn" data-time="250">
-                  <a href="/"><img className="img-circle img-responsive" src="images/solution.jpg" alt="Solution" /></a>
-                  <div className="shadow"></div>
-                </div>
-                <div className="hidden-sm table-cell ct-process-icon">
-                  <span className="ct-process-left"><i className="fa fa-trophy"></i></span>
+            </div>
+         
+            <div data-animate="fadeInUp" data-delay="0.3" className="res-m-bttm-lg wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 animated fadeInUp visiblty"><div className="vc_column-inner "><div className="wpb_wrapper">
+              <div className="wpb_text_column wpb_content_element  text-center">
+                <div className="wpb_wrapper">
+                  <h5>Increase ROI by improving resource allocation to the successful projects</h5>
+                  <p>Achieved uses blockchain technology to exchange investments and project shares only upon verified milestones and create a real incentive for execution.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="row">
-          <div data-animate="fadeInUp" data-delay="0.3" className="res-m-bttm-lg wpb_column vc_column_container col-sm-6 col-md-4 animated fadeInUp">
-            <div className="vc_column-inner ">
-              <div className="wpb_wrapper">
+        </div>
+        <div data-animate="fadeInUp" data-delay="0.4" className="res-m-bttm-lg wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 animated fadeInUp visiblty">
+          <div className="vc_column-inner ">
+            <div className="wpb_wrapper">
+              <div className="wpb_single_image wpb_content_element vc_align_center  vc_custom_1536822692817"></div>
                 <div className="wpb_text_column wpb_content_element  text-center">
                   <div className="wpb_wrapper">
-                    <h5>Info Graphics 1</h5>
-                    <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+                    <h5>Protection from fraudulent acts and misconduct behavior</h5>
+                    <p>Achieved mitigate the risk of being involved in a fraudulent project by making sure that your invested funds will not continue to be drained.</p>
+                  </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-offset-0 vc_col-md-offset-0 vc_col-md-4 vc_col-sm-offset-3 animated fadeInUp visiblty"><div className="vc_column-inner ">
+                <div className="wpb_wrapper"></div>
+                <div className="wpb_single_image wpb_content_element vc_align_center  vc_custom_1536822725902"></div>
+                <div className="wpb_text_column wpb_content_element  text-center">
+                <div className="wpb_wrapper">
+                  <h5>Improve communication and influence over the project process</h5>
+                  <p>Achieved gives you a real-time overview of your investments. You will get notified for updates, on-time tracking and milestone changes. </p>
+                </div>
+               </div>
             </div>
           </div>
-          <div data-animate="fadeInUp" data-delay="0.4" className="res-m-bttm-lg wpb_column vc_column_container col-sm-6 col-md-4 animated fadeInUp visiblty">
-            <div className="vc_column-inner ">
-              <div className="wpb_wrapper">
-                <div className="wpb_single_image wpb_content_element vc_align_center  vc_custom_1536822692817">
-                </div>
-                <div className="wpb_text_column wpb_content_element  text-center">
-                  <div className="wpb_wrapper">
-                    <h5>Info Graphics 2</h5>
-                    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid eos qui ratione voluptatem sequi nesciunt.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container col-sm-6 vc_col-lg-offset-0 col-md-offset-0 col-md-4 col-sm-offset-3 animated fadeInUp visiblty">
-            <div className="vc_column-inner ">
-              <div className="wpb_wrapper"></div>
-              <div className="wpb_single_image wpb_content_element vc_align_center  vc_custom_1536822725902"></div>
-                <div className="wpb_text_column wpb_content_element  text-center">
-                  <div className="wpb_wrapper">
-                    <h5>Info Graphics 3</h5>
-                    <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris fugiat runull dolore magna.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
         </div>
         </section>
-        <section id="roadmap" className="wpb_row vc_row-fluid sectiosection section-pad section-bg section-light section-connect">
+
+        
+
+        
+        
+
+
+
+         <section id="browse-roadmap"className="browse-roadmap">
             <div className="container">
-               <div className="row">
-                  <div className="wpb_column vc_column_container col-sm-12">
-                     <div className="vc_column-inner ">
-                        <div className="wpb_wrapper">
-                           <div className="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1520830144361">
-                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 animated fadeInUp">
-                                 <div className="vc_column-inner ">
-                                    <div className="wpb_wrapper">
-                                       <div className="section-head text-center">
-                                          <h2 className="section-title">
-                                             OUR ROADMAP            <span>ROADMAP</span>        
-                                          </h2>
-                                       </div>
-                                       <div className="vc_empty_space"><span className="vc_empty_space_inner"></span></div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div className="row wpb_row vc_inner vc_row-fluid">
-                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container col-sm-12 animated fadeInUp">
-                                 <div className="vc_column-inner ">
-                                    <div className="wpb_wrapper">
-                                       <div className="row roadmap-list align-items-end">
-                                          <div className="col-lg ">
-                                             <div className="single-roadmap roadmap-sm roadmap-done">
-                                                <h6>March 2018</h6>
-                                                <p>Start of the ICO Crypto Platform Development.</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg width-0">
-                                             <div className="single-roadmap roadmap-sm roadmap-done roadmap-down">
-                                                <h6>June 2018</h6>
-                                                <p>Over 100 merchants on site</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg ">
-                                             <div className="single-roadmap roadmap-lg ">
-                                                <h6>June 2018</h6>
-                                                <p>Launched of mobile Apps</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg width-0">
-                                             <div className="single-roadmap roadmap-sm  roadmap-down">
-                                                <h6>August 2018</h6>
-                                                <p>ICO preparation &amp; Press Tour</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg ">
-                                             <div className="single-roadmap roadmap-sm ">
-                                                <h6>October 2018</h6>
-                                                <p>Start Token Sale Round (1)</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg width-0">
-                                             <div className="single-roadmap roadmap-sm  roadmap-down">
-                                                <h6>December 2018</h6>
-                                                <p>Partnership for the future EcoSystem</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg ">
-                                             <div className="single-roadmap roadmap-lg ">
-                                                <h6>January 2019</h6>
-                                                <p>Our team set-up and commercial preparation</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg width-0">
-                                             <div className="single-roadmap roadmap-sm  roadmap-down">
-                                                <h6>May 2019</h6>
-                                                <p>Priority opening for Token holder</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg ">
-                                             <div className="single-roadmap roadmap-sm ">
-                                                <h6>June 2019</h6>
-                                                <p>Start Token Sale Round (2)</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg width-0">
-                                             <div className="single-roadmap roadmap-sm  roadmap-down">
-                                                <h6>Octorber 2019</h6>
-                                                <p>Blockchain usage announcement for global Network</p>
-                                             </div>
-                                          </div>
-                                          <div className="col-lg ">
-                                             <div className="single-roadmap roadmap-lg ">
-                                                <h6>December 2019</h6>
-                                                <p>Operational Launch United States to general</p>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div className="clearfix"></div>
-         </section>
-         <section className="browse-roadmap">
-           <div className="container">
               <div className="serch-heading">
-                 <div className="row">
-                    <div className="col-md-3"></div>
-                    <div className="wpb_column vc_column_container col-sm-8 col-md-offset-3 col-md-6 col-sm-offset-2">
-                       <div className="vc_column-inner ">
+                <div className="row">
+                  <div className="wpb_column vc_column_container vc_col-sm-8 vc_col-md-offset-3 vc_col-md-6 vc_col-sm-offset-2">
+                    <div className="vc_column-inner ">
+                      <div className="wpb_wrapper">
+                        <div className="wpb_text_column wpb_content_element  text-center">
                           <div className="wpb_wrapper">
-                             <div className="wpb_text_column wpb_content_element  text-center">
-                                <div className="wpb_wrapper">
-                                   <div className="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1520830144361">
-                                      <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 animated fadeInUp">
-                                         <div className="vc_column-inner ">
-                                            <div className="wpb_wrapper">
-                                               <div className="section-head text-center">
-                                                  <h2 className="section-title">
-                                                     Browse Roadmap          <span>Roadmap</span>        
-                                                  </h2>
-                                               </div>
-                                               <div className="vc_empty_space"><span className="vc_empty_space_inner"></span>
-                                               </div>
-                                            </div>
-                                         </div>
-                                      </div>
-                                   </div>
+                            <div className="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1520830144361">
+                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 animated fadeInUp registervisible">
+                                <div className="vc_column-inner ">
+                                  <div className="wpb_wrapper">
+                                    <div className="section-head text-center">
+                                      <h2 className="section-title">
+                                         View ROADMAP          <span>Roadmap</span>        
+                                      </h2>
+                                    </div>
+                                    <div className="vc_empty_space"><span className="vc_empty_space_inner"></span></div>
+                                  </div>
                                 </div>
-                             </div>
+                              </div>
+                            </div>
                           </div>
-                       </div>
+                        </div>
+                      </div>
                     </div>
-                 </div>
-                 <div className="search-bar">
-                    <button type="submit"><i className="fa fa-search"></i></button>
-                    <input type="text" placeholder="Search.." name="search" />
-                 </div>
-                 <div className="map-list">
-                    <ul>
+                  </div>
+                </div>
+                <div className="search-bar">
+                  <button type="submit"><i className="fa fa-search"></i></button>
+                  <input type="text" placeholder="Search.." name="search" />
+                </div>
+                <div className="map-list">
+                  <ul>
                     <li><span><i className="fa fa-check-circle"></i></span><h6>Name 1</h6><div className="roadmap-box">
                     <span>Project 1</span>
                     <a href="/" className="features-action"><em className="ti ti-arrow-right road-arrow"></em></a>
@@ -426,87 +354,118 @@ const { setposition } =this.state;
                     <li><span><i className="fa fa-check-circle"></i></span><h6>Name 4</h6><div className="roadmap-box">
                     <span>Project 4</span>
                     <a href="/" className="features-action"><em className="ti ti-arrow-right road-arrow"></em></a>
-                    </div></li>
-                    </ul>
-                 </div>
+                    </div> </li>
+                  </ul>
               </div>
-           </div>
+            </div>
+          </div>
         </section>
-        <section id="contact" className="vc_rows wpb_row vc_row-fluid section section-pad section-bg section-light">
+    
+        <section id="who_we_are" className="vc_rows wpb_row vc_row-fluid section section-pad section-bg-alt section-fix">
             <div className="container">
-               <div className="row">
-                  <div className="wpb_column vc_column_container col-sm-12">
-                     <div className="vc_column-inner ">
-                        <div className="wpb_wrapper">
-                           <div className="vc_row wpb_row vc_inner vc_row-fluid">
-                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container col-sm-12 animated fadeInUp">
-                                 <div className="vc_column-inner ">
-                                    <div className="wpb_wrapper">
-                                       <div className="section-head text-center">
-                                          <h2 className="section-title">
-                                             Contact Achieved CRYPTO            <span>CONTACT</span>        
-                                          </h2>
-                                       </div>
+                <div className="row">
+                    <div className="wpb_column vc_column_container vc_col-sm-12">
+                        <div className="vc_column-inner ">
+                          <div className="wpb_wrapper">
+                            <div className="vc_row wpb_row vc_inner vc_row-fluid">
+                              <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-12 vc_col-md-8 animated fadeInUp">
+                                <div className="vc_column-inner ">
+                                  <div className="wpb_wrapper">
+                                      <div className="section-head text-center">
+                                        <h2 className="section-title">Who We Are!<span>We</span></h2>
+                                      </div>
+                                      <div className="wpb_text_column wpb_content_element  vc_custom_1520850810932">
+                                        <div className="wpb_wrapper">
+                    
+                                          <p className="center_we_are"><img className="left-q" src="images/left-quote.png" alt="left-q" />As a crypto and blockchain enthusiasts, working in the Israeli blockchain industry during 2017 and 2018, we watched closely at fundraising in the ecosystem. We met with hundreds of projects and investors, witnessed in real-time how the ICO hype is getting out of control and causing projects to manage their funds irresponsibly, fraudulent projects took advantage of the situation, investors lost their money and their trust in the blockchain space. Taking down legitimacy good projects in the downturn cleanup. Today, everybody knows that these problems could be significantly reduced, with the right solution for blockchain projects and investors as one. We made it our mission to address these problems in a way that will benefit investors and performing projects. <img className="right-q" src="images/right-q.png" alt="right-q" /></p>
+                      
+                     
+
+                                        </div>
+                                      </div>
                                     </div>
-                                 </div>
+                                  </div>
                               </div>
-                           </div>
-                           <div className="wpb_text_column wpb_content_element  vc_custom_1520932193361 text-center">
-                              <div className="wpb_wrapper">
-                                 <p>Any question? Reach out to us and we’ll get back to you shortly.</p>
-                              </div>
-                           </div>
-                           <div className="vc_row wpb_row vc_inner row">
-                              <div className="col-md-2"></div>
-                              <div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container col-sm-12 col-md-offset-2 col-md-10 animated fadeInUp">
-                                 <div className="vc_column-inner ">
-                                    <div className="wpb_wrapper">
-                                       <div className="wpb_text_column wpb_content_element  vc_custom_1520996880206">
-                                          <div className="wpb_wrapper">
-                                             <ul className="contact-info">
-                                                <li><em className="fa fa-phone">phone</em>+44 0123 4567</li>
-                                                <li><em className="fa fa-envelope">email</em>info@yourcompany.com</li>
-                                                <li><em className="fa fa-paper-plane">tele</em>Join us on Telegram</li>
-                                             </ul>
-                                          </div>
-                                       </div>
-                                       <div role="form" onSubmit={this.handleSubmit} className="wpcf7" id="wpcf7-f301-p476-o1" lang="en-US" dir="ltr">
-                                          <div className="screen-reader-response"></div>
-                                          <form  className="wpcf7-form" noValidate="noValidate">
-                                             <div className="comment-form text-center">
-                                                <div className="form-results"></div>
-                                                <div className="input-field">
-                                                   <span className="wpcf7-form-control-wrap your-name">
-                                                   <input type="text" name="your-name" size="40" className="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input-line" value={this.state.name} onChange={this.handlenameChange} /></span><label className="input-title">Your Name</label>
-                                                </div>
-                                                <div className="input-field">
-                                                   <span className="wpcf7-form-control-wrap your-email">
-                                                   <input type="email" name="your-email" size="40" className="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email input-line" value={this.state.email} onChange={this.handleEmailChange} />
-                                                   </span><label className="input-title">Your Email</label>
-                                                </div>
-                                                <div className="input-field">
-                                                   <span className="wpcf7-form-control-wrap your-message">
-                                                   <textarea name="your-message" cols="40" rows="4" className="wpcf7-form-control wpcf7-textarea input-line txtarea" aria-invalid="false" onChange={this.handlemessageChange} defaultValue={this.state.message}></textarea>
-                                                   </span><label className="input-title">Your Message</label>
-                                                </div>
-                                                <div className="input-field">
-                                                   <button type="submit" className="btn">Submit</button>
-                                                </div>
-                                             </div>
-                                             <div className="wpcf7-response-output wpcf7-display-none"></div>
-                                          </form>
-                                       </div>
+                            </div>
+
+                            <div className="vc_row wpb_row vc_inner vc_row-fluid">
+                              <div data-animate="fadeInUp" data-delay="0.2" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
+                                <div className="vc_column-inner ">
+                                  <div className="wpb_wrapper">
+                                    <div className="team-circle text-center">
+                                        <div className="team-photo">
+                                            <img src="images/1.png" alt="" />
+                                            <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/waylon-dalton/" className="expand-trigger content-popup"></span>
+                                        </div>
+                                        <div className="team-info">
+                                            <h5 className="team-name">Nir Samocha</h5>
+                                            <span className="team-title">Chief Executive Officer</span>
+                                            
+                                        </div>
                                     </div>
-                                 </div>
+
+                                  </div>
+                                </div>
                               </div>
-                           </div>
-                        </div>
-                     </div>
+                              <div data-animate="fadeInUp" data-delay="0.3" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
+                                <div className="vc_column-inner ">
+                                  <div className="wpb_wrapper">
+                                    <div className="team-circle text-center">
+                                        <div className="team-photo">
+                                            <img src="images/3.png" alt="" />
+                                            <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/stefan-harary/" className="expand-trigger content-popup"></span>
+                                        </div>
+                                        <div className="team-info">
+                                            <h5 className="team-name">Alex Perry</h5>
+                                            <span className="team-title">Chief Technology Officer</span>
+                                            
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div data-animate="fadeInUp" data-delay="0.4" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
+                                <div className="wpb_wrapper">
+                                    <div className="team-circle text-center">
+                                      <div className="team-photo">
+                                          <img src="images/2.png" alt="" />
+                                          <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/moises-teare/" className="expand-trigger content-popup"></span>
+                                      </div>
+                                      <div className="team-info">
+                                          <h5 className="team-name">Robi Dayan</h5>
+                                          <span className="team-title">Chief Operating Officer</span>
+                                          
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-animate="fadeInUp" data-delay="0.4" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
+                                <div className="wpb_wrapper">
+                                    <div className="team-circle text-center">
+                                      <div className="team-photo">
+                                          <img src="images/4.png" alt="" />
+                                          <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/moises-teare/" className="expand-trigger content-popup"></span>
+                                      </div>
+                                      <div className="team-info">
+                                          <h5 className="team-name">Robert Hitchens</h5>
+                                          <span className="team-title">Blockchain Expert</span>
+                                          
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
             <div className="clearfix"></div>
-         </section>
+        </section>
+        <Contact />
          <Footer />
       </div>
       );

@@ -61,7 +61,7 @@ handleChange(e) {
       password: this.state.password,
       mobileNumber: this.state.phoneno
     };
-   axios.post('http://localhost:8000/api/register', { user })
+   axios.post('/api/register', { user })
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -82,8 +82,8 @@ render() {
     return (
       <div>
         <Layout />
+        <section className="vc_rows wpb_row padding-section vc_row-fluid section section-pad section-bg section-light">
       <div className="row padding-section">
-          <div className="col-sm-2"></div>
           <div className="wpb_column vc_column_container col-sm-12">
              <div className="vc_column-inner ">
                 <div className="wpb_wrapper">
@@ -106,7 +106,6 @@ render() {
                       </div>
                    </div>
                    <div className="row wpb_row vc_inner vc_row-fluid">
-                   <div className="col-sm-2" />
                       <div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container col-sm-12 vc_col-md-offset-2 col-md-8 animated fadeInUp visiblty">
                          <div className="vc_column-inner ">
                             <div className="wpb_wrapper">
@@ -160,6 +159,7 @@ render() {
              </div>
           </div>
        </div>
+       </section>
        <Footer />
       </div>
       );

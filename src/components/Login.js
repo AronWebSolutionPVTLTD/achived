@@ -28,7 +28,7 @@ handlePasswordChange(e) {
       password: this.state.password
     };
     //var that =this;
-  axios.post('http://localhost:8000/api/login', { user })
+  axios.post('/api/login', { user })
   .then(res => {
     console.log(res.data);
     if(res.data.data !== 'Matching')
@@ -43,6 +43,7 @@ handlePasswordChange(e) {
   })
 }
 handleChange(){
+  
 	console.log("Done");
 }
 render() {
@@ -50,6 +51,7 @@ render() {
     return (
       <div>
       	<Layout />
+        <section className="vc_rows wpb_row vc_row-fluid padding-section section section-pad section-bg section-light">
       	<div className="row padding-section">
       		<div className="col-md-2"></div> 
       	<div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container col-sm-12 col-md-offset-2 col-md-8 animated fadeInUp visiblty">
@@ -115,6 +117,7 @@ render() {
         </div>
     	</div>
       </div>
+      </section>
       <Footer />
       </div>
     );

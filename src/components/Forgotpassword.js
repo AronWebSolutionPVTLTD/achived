@@ -27,7 +27,7 @@ handleSubmit(event) {
     const user = {
       email: this.state.email,
     };
-   axios.post('http://localhost:8000/api/forgotpassword', { user })
+   axios.post('/api/forgotpassword', { user })
       .then(res => {
         console.log(res.data.data);
         this.setState({requestId: res.data.data.request_id});
@@ -65,8 +65,8 @@ handleverify(event){
     return (
       <div>
         <Layout />
+        <section className="vc_rows wpb_row padding-section vc_row-fluid section section-pad section-bg section-light">
       <div className="row padding-section">
-          <div className="col-sm-2"></div>
           <div className="wpb_column vc_column_container col-sm-12">
              <div className="vc_column-inner ">
                 <div className="wpb_wrapper">
@@ -89,8 +89,7 @@ handleverify(event){
                       </div>
                    </div>
                   <div className="row wpb_row vc_inner vc_row-fluid">
-                    <div className="col-sm-2"></div>
-                      <div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container col-sm-12 vc_col-md-offset-2 col-md-8 animated fadeInUp">
+                      <div data-animate="fadeInUp" data-delay="0.5" className="wpb_column vc_column_container col-sm-12 vc_col-md-offset-2 col-md-8 animated fadeInUp registervisible">
                         <div className="vc_column-inner ">
                           <div className="wpb_wrapper">            
                           <div role="form" className="wpcf7" id="wpcf7-f301-p476-o1" lang="en-US" dir="ltr">
@@ -125,6 +124,7 @@ handleverify(event){
            </div>
          </div>
      </div>
+     </section>
      <Footer />
    </div>
    );

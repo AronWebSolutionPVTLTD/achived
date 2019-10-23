@@ -34,12 +34,8 @@ constructor(props){
       <div className="row text-center">
          <div className="col-md-12">
             <ul className="social">
-               <li><a href="/"><em className="fa fa-facebook"></em></a></li>
-               <li><a href="/"><em className="fa fa-twitter"></em></a></li>
-               <li><a href="/"><em className="fa fa-youtube-play"></em></a></li>
-               <li><a href="/"><em className="fa fa-github"></em></a></li>
-               <li><a href="/"><em className="fa fa-bitcoin"></em></a></li>
-               <li><a href="/"><em className="fa fa-medium"></em></a></li>
+              	<li><a href="/"><em className="fa fa-linkedin"></em></a></li>
+                <li><a href="/"><em className="fa fa-github"></em></a></li>
             </ul>
             <span className="copyright-text">
             Copyright © 2018 All trademarks and copyrights belong to their respective owners.</span>                        

@@ -35,9 +35,9 @@ render() {
 	      	<div className="navbar navbar-expand-lg is-transparent" id="mainnav1">
                	<nav className="container">
                   <h1 className="navbar-brand">
-                     <a href="/">
-                     <img className="logo" src="./logo-white.png" alt="Cryptico" />
-                     <img className="logo-2" src="./logo-white.png" alt="Cryptico" />
+                      <a href="/">
+                     <img className="logo" src="/images/site-logo.png" alt="site-logo" />
+                     <img className="logo-2" src="/images/site-logo.png" alt="site-logo" />
                      </a>
                   </h1>
                   <button className="navbar-toggler" type="button">
@@ -47,24 +47,15 @@ render() {
                   </button>
                   <div className="navbar-collapse justify-content-end">
                      <ul id="menu-onepage-menu" className="navbar-nav">
-                        <li><a href="/#login" className="nav-link">What is ico</a></li>
-                        <li><a href="/#about" className="nav-link">Token Sale</a></li>
-                        <li><a href="/#roadmap" className="nav-link">Roadmap</a></li>
-                        <li><a href="/#contact" className="nav-link">Team</a></li>
-                        <li><a href="/" className="nav-link">Partners</a></li>
-                        <li className="dropdown">
-                           <a href="/" className="nav-link">More</a>
-                           <ul className="sub-menu">
-                              <li><a href="/">Media Partners</a></li>
-                              <li><a href="/">Blog</a></li>
-                              <li><a href="/">FAQs</a></li>
-                           </ul>
-                        </li>
-                        <li><a href="/" className="nav-link">Contact</a></li>
+                      
+                        <li><a href="/#what_is_achieved" className="nav-link">What Is Achieved</a></li>
+                        <li><a href="/#browse-roadmap" className="nav-link">Browse Roadmaps</a></li>
+                        <li><a href="/#contact" className="nav-link">contact startups</a></li>
+                        <li><a href="/#who_we_are" className="nav-link">Who We ARE</a></li>
+                        
                      </ul>
                      <ul className="navbar-nav navbar-btns">
-                        <li className="nav-item"><a className="nav-link btn btn-sm btn-outline menu-link" href="/">Whitepaper</a></li>
-                        <li className="nav-item"><a className="nav-link btn btn-sm btn-outline menu-link" href="/login">Login</a></li>
+                                            <li className="nav-item"><a className="nav-link btn btn-sm btn-outline menu-link" href="/login">Login</a></li>
                      </ul>
                   </div>
                </nav>
