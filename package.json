@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.5.1",
     "@syncfusion/ej2-diagrams": "^17.3.17",
     "@syncfusion/ej2-react-buttons": "^17.3.16",
     "@syncfusion/ej2-react-diagrams": "^17.3.17",
