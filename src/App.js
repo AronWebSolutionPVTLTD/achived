@@ -6,7 +6,7 @@ import Register from './components/Register';
 import Landing from './components/Landing';
 import ForgotPassword from './components/Forgotpassword';
 import Dashboard from './components/Dashboard';
-import Starter from './components/Starter';
+import Contact from './components/Contact';
 import Diagrams from './components/Diagram';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/login" exact component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/dashboard" component={Dashboard} />
- 	    <Route path="/starter" component={Starter} />
+ 	    <Route path="/contact" component={Contact} />
         <Route path="/diagram" component={Diagrams} />
     </Router>
     </div>

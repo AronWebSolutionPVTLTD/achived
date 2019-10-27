@@ -50,8 +50,8 @@ render() {
                       
                         <li><a href="/#what_is_achieved" className="nav-link">What Is Achieved</a></li>
                         <li><a href="/#browse-roadmap" className="nav-link">Browse Roadmaps</a></li>
-                        <li><a href="/#contact" className="nav-link">contact startups</a></li>
                         <li><a href="/#who_we_are" className="nav-link">Who We ARE</a></li>
+                        <li><a href="/#contact" className="nav-link">contact startups</a></li>
                         
                      </ul>
                      <ul className="navbar-nav navbar-btns">

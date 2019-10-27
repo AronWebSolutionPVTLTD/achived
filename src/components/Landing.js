@@ -3,6 +3,10 @@ import React, { Component } from 'react';
 import Footer from './../Layout/Footer';
 import Contact from './Contact';
 import $ from "jquery";
+import {Carusel} from './Carusel';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 class Landing extends Component {
 constructor(props){
   super(props);
@@ -62,6 +66,9 @@ handlemailchimpSubmit(e){
 
 }
 componentDidMount() {
+AOS.init({
+    duration : 2000
+  });
 window.addEventListener('scroll', this.handleScroll);
   var $inputline=$('.input-line');
   if($inputline.length>0){ 
@@ -111,8 +118,8 @@ const { setposition } =this.state;
                      <ul id="menu-onepage-menu" className="navbar-nav">
                         <li><a href="/#what_is_achieved" className="nav-link">What Is Achieved</a></li>
                         <li><a href="/#browse-roadmap" className="nav-link">View ROADMAP</a></li>
-                        <li><a href="/#contact" className="nav-link">contact startups</a></li>
                         <li><a href="/#who_we_are" className="nav-link">Who We ARE</a></li>
+                        <li><a href="/contact" className="nav-link">contact us</a></li>
                             
                      </ul>
                      <ul className="navbar-nav navbar-btns">
@@ -168,8 +175,8 @@ const { setposition } =this.state;
                                  <div className="vc_column-inner ">
                                     <div className="wpb_wrapper">
                                        <div className="section-head text-center">
-                                          <h2 className="section-title">
-                                             What is Achieved<span>ACHIEVED</span>        
+                                          <h2 className="section-title" data-aos='fade-down'>
+                                             What is Achieved      
                                           </h2>
                                        </div>
                                        <div className="vc_empty_space"><span className="vc_empty_space_inner"></span></div>
@@ -181,7 +188,7 @@ const { setposition } =this.state;
                               <div data-animate="fadeInUp" data-delay="0" className="wpb_column vc_column_container col-sm-12 animated fadeInUp visiblty">
                                  <div className="vc_column-inner ">
                                     <div className="wpb_wrapper">
-                                       <div>
+                                       <div data-aos='fade-up'>
                     Achieved &#8482; links investments and project shares to a blockchain technology platform.
 The platform provides a real-time overview of the project's roadmap and an efficient communication channel between both parties. The invested funds will be exchanged for the project shares, protecting both funds and shares, thus incentivize the delivery of a successful project execution.
                     </div>
@@ -213,8 +220,8 @@ The platform provides a real-time overview of the project's roadmap and an effic
                            <div className="vc_column-inner">
                               <div className="wpb_wrapper">
                                  <div className="section-head text-center">
-                                    <h2 className="section-title">
-                                       Why Achieved<span>Achieved</span>        
+                                    <h2 className="section-title" data-aos="fade-down">
+                                       Why Achieved     
                                     </h2>
                                  </div>
                                  <div className="vc_empty_space">
@@ -232,27 +239,23 @@ The platform provides a real-time overview of the project's roadmap and an effic
             <div className="ct-process">
                 <div className="row">
                     <div className="display-table">
-                        <div className="hidden-sm table-cell ct-process-icon">
-                            <span className="ct-process-right"><i className="fa fa-hand-o-right"></i></span>
-                        </div>
-                        <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="50">
-                            <a href="/"><img className="img-responsive" src="images/success3.png" alt="Research"/></a>
+                        
+                        <div  className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="50">
+                            <img data-aos="flip-left" className="img-responsive" src="images/success3.png" alt="Research"/>
                             
                            
                         </div>
-                        <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="150">
-                            <a href="/"><img className="img-responsive" src="images/security2.png" alt="Idea"/></a>
+                        <div  className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="150">
+                            <img data-aos="flip-up" className="img-responsive" src="images/security2.png" alt="Idea"/>
                            
                             
                         </div>
                         <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="250">
-                            <a href="/"><img className="img-responsive" src="images/communication3.png" alt="Solution" /></a>
+                            <img data-aos="flip-right" className="img-responsive" src="images/communication3.png" alt="Solution" />
                             
                            
                         </div>
-                        <div className="hidden-sm table-cell ct-process-icon">
-                            <span className="ct-process-left"><i className="fa fa-trophy"></i></span>
-                        </div>
+                    
                     </div>
                     <div className="clearfix"></div>
                 </div>
@@ -260,9 +263,9 @@ The platform provides a real-time overview of the project's roadmap and an effic
          
             <div data-animate="fadeInUp" data-delay="0.3" className="res-m-bttm-lg wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 animated fadeInUp visiblty"><div className="vc_column-inner "><div className="wpb_wrapper">
               <div className="wpb_text_column wpb_content_element  text-center">
-                <div className="wpb_wrapper">
-                  <h5>Increase ROI by improving resource allocation to the successful projects</h5>
-                  <p>Achieved uses blockchain technology to exchange investments and project shares only upon verified milestones and create a real incentive for execution.</p>
+                <div className="wpb_wrapper" >
+                  <h5 data-aos="fade-down-right">Increase ROI by improving resource allocation to the successful projects</h5>
+                  <p data-aos="fade-up-right">Achieved uses blockchain technology to swap investments and project shares only upon verified milestones and create a real incentive for execution.</p>
                 </div>
               </div>
             </div>
@@ -274,8 +277,8 @@ The platform provides a real-time overview of the project's roadmap and an effic
               <div className="wpb_single_image wpb_content_element vc_align_center  vc_custom_1536822692817"></div>
                 <div className="wpb_text_column wpb_content_element  text-center">
                   <div className="wpb_wrapper">
-                    <h5>Protection from fraudulent acts and misconduct behavior</h5>
-                    <p>Achieved mitigate the risk of being involved in a fraudulent project by making sure that your invested funds will not continue to be drained.</p>
+                    <h5 data-aos="fade-down">Protection from fraudulent acts and misconduct behavior</h5>
+                    <p data-aos="fade-up">Achieved mitigate the risk of being involved in a fraudulent project by locking and securing your invested funds.</p>
                   </div>
                     </div>
                   </div>
@@ -286,8 +289,8 @@ The platform provides a real-time overview of the project's roadmap and an effic
                 <div className="wpb_single_image wpb_content_element vc_align_center  vc_custom_1536822725902"></div>
                 <div className="wpb_text_column wpb_content_element  text-center">
                 <div className="wpb_wrapper">
-                  <h5>Improve communication and influence over the project process</h5>
-                  <p>Achieved gives you a real-time overview of your investments. You will get notified for updates, on-time tracking and milestone changes. </p>
+                  <h5 data-aos="fade-down-left">Improve communication and influence over the project process</h5>
+                  <p data-aos="fade-up-left">Achieved gives you a real-time overview of your investments. You will get notified for updates, on-time tracking and milestone changes. </p>
                 </div>
                </div>
             </div>
@@ -318,8 +321,8 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                 <div className="vc_column-inner ">
                                   <div className="wpb_wrapper">
                                     <div className="section-head text-center">
-                                      <h2 className="section-title">
-                                         View ROADMAP          <span>Roadmap</span>        
+                                      <h2 data-aos="fade-down" className="section-title">
+                                         View ROADMAP             
                                       </h2>
                                     </div>
                                     <div className="vc_empty_space"><span className="vc_empty_space_inner"></span></div>
@@ -333,29 +336,12 @@ The platform provides a real-time overview of the project's roadmap and an effic
                     </div>
                   </div>
                 </div>
-                <div className="search-bar">
+                <div data-aos="fade-right" className="search-bar">
                   <button type="submit"><i className="fa fa-search"></i></button>
                   <input type="text" placeholder="Search.." name="search" />
                 </div>
-                <div className="map-list">
-                  <ul>
-                    <li><span><i className="fa fa-check-circle"></i></span><h6>Name 1</h6><div className="roadmap-box">
-                    <span>Project 1</span>
-                    <a href="/" className="features-action"><em className="ti ti-arrow-right road-arrow"></em></a>
-                    </div></li>
-                    <li><span><i className="fa fa-check-circle"></i></span><h6>Name 2</h6><div className="roadmap-box">
-                    <span>Project 2</span>
-                    <a href="/" className="features-action"><em className="ti ti-arrow-right road-arrow"></em></a>
-                    </div></li>
-                    <li><span><i className="fa fa-check-circle"></i></span><h6>Name 3</h6><div className="roadmap-box">
-                    <span>Project 3</span>
-                    <a href="/" className="features-action"><em className="ti ti-arrow-right road-arrow"></em></a>
-                    </div></li>
-                    <li><span><i className="fa fa-check-circle"></i></span><h6>Name 4</h6><div className="roadmap-box">
-                    <span>Project 4</span>
-                    <a href="/" className="features-action"><em className="ti ti-arrow-right road-arrow"></em></a>
-                    </div> </li>
-                  </ul>
+                <div data-aos="zoom-in">
+               <Carusel  />
               </div>
             </div>
           </div>
@@ -372,12 +358,12 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                 <div className="vc_column-inner ">
                                   <div className="wpb_wrapper">
                                       <div className="section-head text-center">
-                                        <h2 className="section-title">Who We Are!<span>We</span></h2>
+                                        <h2 data-aos="fade-down" className="section-title">Who We Are!</h2>
                                       </div>
                                       <div className="wpb_text_column wpb_content_element  vc_custom_1520850810932">
                                         <div className="wpb_wrapper">
                     
-                                          <p className="center_we_are"><img className="left-q" src="images/left-quote.png" alt="left-q" />As a crypto and blockchain enthusiasts, working in the Israeli blockchain industry during 2017 and 2018, we watched closely at fundraising in the ecosystem. We met with hundreds of projects and investors, witnessed in real-time how the ICO hype is getting out of control and causing projects to manage their funds irresponsibly, fraudulent projects took advantage of the situation, investors lost their money and their trust in the blockchain space. Taking down legitimacy good projects in the downturn cleanup. Today, everybody knows that these problems could be significantly reduced, with the right solution for blockchain projects and investors as one. We made it our mission to address these problems in a way that will benefit investors and performing projects. <img className="right-q" src="images/right-q.png" alt="right-q" /></p>
+                                          <p data-aos="fade-right" className="center_we_are"><img className="left-q" src="images/left-quote.png" alt="left-q" /><i>As a crypto and blockchain enthusiasts, working in the blockchain industry during 2017 and 2018, we watched closely at the fundraising process. We were witnessed in real-time to the ICO hype and how it causes projects to manage their funds irresponsibly, fraudulent projects took advantage of the situation, investors lost their money and their trust in the blockchain space. Taking down legitimacy good projects in the downturn cleanup. We made it our mission to address these problems in a way that will benefit investors and performing projects.</i> <img className="right-q" src="images/right-q.png" alt="right-q" /></p>
                       
                      
 
@@ -389,10 +375,10 @@ The platform provides a real-time overview of the project's roadmap and an effic
                             </div>
 
                             <div className="vc_row wpb_row vc_inner vc_row-fluid">
-                              <div data-animate="fadeInUp" data-delay="0.2" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
+                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
                                 <div className="vc_column-inner ">
                                   <div className="wpb_wrapper">
-                                    <div className="team-circle text-center">
+                                    <div data-aos="zoom-in-right" className="team-circle text-center">
                                         <div className="team-photo">
                                             <img src="images/1.png" alt="" />
                                             <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/waylon-dalton/" className="expand-trigger content-popup"></span>
@@ -407,27 +393,11 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                   </div>
                                 </div>
                               </div>
-                              <div data-animate="fadeInUp" data-delay="0.3" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
-                                <div className="vc_column-inner ">
-                                  <div className="wpb_wrapper">
-                                    <div className="team-circle text-center">
-                                        <div className="team-photo">
-                                            <img src="images/3.png" alt="" />
-                                            <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/stefan-harary/" className="expand-trigger content-popup"></span>
-                                        </div>
-                                        <div className="team-info">
-                                            <h5 className="team-name">Alex Perry</h5>
-                                            <span className="team-title">Chief Technology Officer</span>
-                                            
-                                        </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              
 
-                              <div data-animate="fadeInUp" data-delay="0.4" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
+                              <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
                                 <div className="wpb_wrapper">
-                                    <div className="team-circle text-center">
+                                    <div data-aos="zoom-in-up" className="team-circle text-center">
                                       <div className="team-photo">
                                           <img src="images/2.png" alt="" />
                                           <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/moises-teare/" className="expand-trigger content-popup"></span>
@@ -441,9 +411,26 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                   </div>
                                 </div>
                               </div>
-                              <div data-animate="fadeInUp" data-delay="0.4" className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
+                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
+                                <div className="vc_column-inner ">
+                                  <div className="wpb_wrapper">
+                                    <div data-aos="zoom-in-down" className="team-circle text-center">
+                                        <div className="team-photo">
+                                            <img src="images/3.png" alt="" />
+                                            <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/stefan-harary/" className="expand-trigger content-popup"></span>
+                                        </div>
+                                        <div className="team-info">
+                                            <h5 className="team-name">Alex Perry</h5>
+                                            <span className="team-title">Chief Technology Officer</span>
+                                            
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
                                 <div className="wpb_wrapper">
-                                    <div className="team-circle text-center">
+                                    <div data-aos="zoom-in-left" className="team-circle text-center">
                                       <div className="team-photo">
                                           <img src="images/4.png" alt="" />
                                           <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/moises-teare/" className="expand-trigger content-popup"></span>
@@ -465,7 +452,6 @@ The platform provides a real-time overview of the project's roadmap and an effic
             </div>
             <div className="clearfix"></div>
         </section>
-        <Contact />
          <Footer />
       </div>
       );

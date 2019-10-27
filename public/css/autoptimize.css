@@ -21622,12 +21622,12 @@ hr:last-child,
 
 .site-header .navbar-brand {
 	height: auto;
-	padding: 0
+	padding: 0px;
 }
 
 .site-header .navbar-brand img {
 	width: auto;
-	max-width: 100%
+	max-width: 220%;
 }
 
 .site-header .navbar-brand img.logo-2,
