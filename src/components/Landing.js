@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 //import Layout from './../Layout/Layout';
 import Footer from './../Layout/Footer';
-import Contact from './Contact';
 import $ from "jquery";
 import {Carusel} from './Carusel';
 import AOS from 'aos';
@@ -117,9 +116,9 @@ const { setposition } =this.state;
                   <div className="navbar-collapse justify-content-end">
                      <ul id="menu-onepage-menu" className="navbar-nav">
                         <li><a href="/#what_is_achieved" className="nav-link">What Is Achieved</a></li>
-                        <li><a href="/#browse-roadmap" className="nav-link">View ROADMAP</a></li>
+                        <li><a href="/#browse-roadmap" className="nav-link">Explore projects</a></li>
                         <li><a href="/#who_we_are" className="nav-link">Who We ARE</a></li>
-                        <li><a href="/contact" className="nav-link">contact us</a></li>
+                        <li><a href="/contact" className="nav-link">For projects</a></li>
                             
                      </ul>
                      <ul className="navbar-nav navbar-btns">
@@ -143,7 +142,7 @@ const { setposition } =this.state;
                               <div className="wpb_text_column wpb_content_element  vc_custom_1520825700169">
                                  <div className="wpb_wrapper">
                                     <h1 className="powerdata">Linking investments to verified milestones</h1>
-                                    <p className="lead color-secondary">shielding the investor's funds from fraudulent acts and lack of project execution.</p>
+                                    <p className="lead color-secondary">Shielding the investor's funds from fraudulent acts and lack of project execution.</p>
                                     <ul className="btns">
                                        <li><a className="btn" href="/register">Sign up to Join</a></li>
                                        
@@ -151,7 +150,7 @@ const { setposition } =this.state;
                                  </div>
                               </div>
                               <ul className="social">
-                                <li><a href="/"><em className="fa fa-linkedin"></em></a></li>
+                                <li><a href="https://www.linkedin.com/company/achieved-io/"><em className="fa fa-linkedin"></em></a></li>
                                 <li><a href="/"><em className="fa fa-github"></em></a></li>
                               </ul>
                            </div>
@@ -322,7 +321,7 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                   <div className="wpb_wrapper">
                                     <div className="section-head text-center">
                                       <h2 data-aos="fade-down" className="section-title">
-                                         View ROADMAP             
+                                         Explore projects            
                                       </h2>
                                     </div>
                                     <div className="vc_empty_space"><span className="vc_empty_space_inner"></span></div>

@@ -32,7 +32,7 @@ render() {
 	const { setposition } =this.state;
     return (
     	<header className={"site-header is-sticky " +(setposition? 'has-fixed': '')} id="other_header">
-	      	<div className="navbar navbar-expand-lg is-transparent" id="mainnav1">
+	      	<div className="navbar navbar-expand-lg is-transparent" id="mainnav">
                	<nav className="container">
                   <h1 className="navbar-brand">
                       <a href="/">
@@ -49,7 +49,7 @@ render() {
                      <ul id="menu-onepage-menu" className="navbar-nav">
                       
                         <li><a href="/#what_is_achieved" className="nav-link">What Is Achieved</a></li>
-                        <li><a href="/#browse-roadmap" className="nav-link">Browse Roadmaps</a></li>
+                        <li><a href="/#browse-roadmap" className="nav-link">Explore Roadmaps</a></li>
                         <li><a href="/#who_we_are" className="nav-link">Who We ARE</a></li>
                         <li><a href="/#contact" className="nav-link">contact startups</a></li>
                         
@@ -61,7 +61,7 @@ render() {
                </nav>
             </div>
             <section className="inner-banner vc_rows wpb_row vc_row-fluid mobile-center banner-particle banner-curb banner-full vc_row-o-equal-height vc_row-o-content-middle vc_row-flex banner d-flex align-items-center">
-            <div id="particles-js" className="particles-container particles-js"><canvas className="particles-js-canvas-el" width="1423" height="200"></canvas></div>
+            <div id="particles-js" className="particles-container particles-js"><canvas className="particles-js-canvas-el" width="1423" height="140"></canvas></div>
             
             <div className="clearfix"></div>
          </section>
@@ -69,4 +69,6 @@ render() {
       );
   }
 }
+
+
 export default Layout;

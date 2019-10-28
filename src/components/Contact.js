@@ -2,18 +2,9 @@ import React, { Component } from 'react';
 import Layout from './../Layout/Layout';
 import Footer from './../Layout/Footer';
 import axios from 'axios'; 
-import Input from '@material-ui/core/Input';
-import { makeStyles } from '@material-ui/core/styles';
+import {ContactForm} from './ContactForm';
 
-const useStyles = makeStyles(theme => ({
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  input: {
-    margin: theme.spacing(1),
-  },
-})); 
+
 class Register extends Component {
 constructor(props){
   super(props);
@@ -90,7 +81,6 @@ handleChange(e) {
   } 
 }
 render() { 
-  const classes = useStyles();
 
       return (
       <div>
@@ -126,44 +116,7 @@ render() {
                                     <div className="wpb_wrapper">
                                        <div role="form" onSubmit={this.handleSubmit} className="wpcf7" id="wpcf7-f301-p476-o1" lang="en-US" dir="ltr">
                                           <div className="screen-reader-response"></div>
-                                          <form  className="wpcf7-form" noValidate="noValidate">
-                                             <div className="comment-form text-center">
-                                             <div className="row">
-                                              <div className="col-md-6 comment-form text-center">
-                                              <Input
-                                                placeholder="First Name*"
-                                               className={classes.input}
-                                                inputProps={{
-                                                  'aria-label': 'description',
-                                                  }}
-                                                  />
-                                               
-                                              </div>
-                                              <div className="col-md-6 comment-form text-center">
-                                                <div className="input-field">
-                                                   <input type="text" name="your-name" size="40" className="form-control form-inputs" value={this.state.lastname} onChange={this.handlenameChange} placeholder="Last Name*"/>
-                                                </div>
-                                              </div>
-                                           </div>
-                                                <div className="input-field">
-                                                   <input type="email" name="your-email" size="40" className="form-control form-inputs" value={this.state.email} onChange={this.handleEmailChange} placeholder="Valid Email Adress*" />
-                                                </div>
-                                                <div className="input-field">
-                                                   <input type="email" name="your-email" size="40" className="form-control form-inputs" value={this.state.email} onChange={this.handleEmailChange} placeholder="Phone number" />
-                                                   
-                                                </div>
-                                                <div className="input-field">
-                                                   <input type="email" name="your-email" size="40" className="form-control form-inputs" value={this.state.email} onChange={this.handleEmailChange} placeholder="Comments" />
-                                                </div>
-                                                <div className="input-field">
-                                                   <textarea name="your-message" cols="40" rows="4" className="form-control form-inputs" aria-invalid="false" onChange={this.handlemessageChange} defaultValue={this.state.message} placeholder="Comments" ></textarea>
-                                                </div>
-                                                <div className="input-field">
-                                                   <button type="submit" className="btn">Submit</button>
-                                                </div>
-                                             </div>
-                                             <div className="wpcf7-response-output wpcf7-display-none"></div>
-                                          </form>
+                                          <ContactForm/>
                                        </div>
                                     </div>
                                  </div>

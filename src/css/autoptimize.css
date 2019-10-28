@@ -90,14 +90,14 @@ section.browse-roadmap {
 }
 
 /* infographics css */
-.ct-process {
+/* .ct-process {
 
     background: url("/images/lines.png") repeat-x center;
     font-size: 30px;
     margin-bottom: 50px;
 	text-align:center;
 
-}
+} */
 .display-table {
 	display: table;
 	width: 100%;
@@ -6524,7 +6524,7 @@ tbody.collapse.show {
 
 .card-footer {
 	padding: .75rem 1.25rem;
-	background-color: rgba(0, 0, 0, .03);
+	color: "white";
 	border-top: 1px solid rgba(0, 0, 0, .125)
 }
 
@@ -18313,7 +18313,7 @@ screen and (max-height:300px) {
 
 @media only screen and (max-width:767px) {
 	.ct-process {
-	background: url("/images/lines-vertical.png") repeat-y center;
+	background: url() repeat-y center;
 	font-size: 30px;
 	margin-top: 50px;
 	text-align:center !important;
