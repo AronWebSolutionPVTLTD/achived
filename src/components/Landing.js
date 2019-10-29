@@ -4,6 +4,10 @@ import Footer from './../Layout/Footer';
 import $ from "jquery";
 import {Carusel} from './Carusel';
 import AOS from 'aos';
+import SuccessGif from '.././Images/1-GIF.gif';
+import SecurityGif from '.././Images/2-GIF.gif';
+import CommunicationGif from '.././Images/3-GIF.gif';
+
 import 'aos/dist/aos.css';
 
 class Landing extends Component {
@@ -240,17 +244,17 @@ The platform provides a real-time overview of the project's roadmap and an effic
                     <div className="display-table">
                         
                         <div  className="table-cell text-center animated activate bounceIn  registervisible">
-                            <img data-aos="flip-left" className="img-responsive" src="images/1-GIf.gif" alt="Research"/>
+                            <img data-aos="flip-left" className="img-responsive" src={SuccessGif} alt="Research"/>
                             
                            
                         </div>
                         <div  className="table-cell text-center animated activate bounceIn  registervisible" >
-                            <img data-aos="flip-up" className="img-responsive" src="images/2-GIf.gif" alt="Idea"/>
+                            <img data-aos="flip-up" className="img-responsive" src={SecurityGif} alt="Idea"/>
                            
                             
                         </div>
                         <div className="table-cell text-center animated activate bounceIn  registervisible">
-                            <img data-aos="flip-right" className="img-responsive" src="images/3-GIf.gif" alt="Solution" />
+                            <img data-aos="flip-right" className="img-responsive" src={CommunicationGif} alt="Solution" />
                             
                            
                         </div>
