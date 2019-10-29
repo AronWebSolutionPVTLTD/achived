@@ -240,17 +240,17 @@ The platform provides a real-time overview of the project's roadmap and an effic
                     <div className="display-table">
                         
                         <div  className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="50">
-                            <img data-aos="flip-left" className="img-responsive" src="images/success3.png" alt="Research"/>
+                            <img data-aos="flip-left" className="img-responsive" src="images/1-GIf.gif" alt="Research"/>
                             
                            
                         </div>
                         <div  className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="150">
-                            <img data-aos="flip-up" className="img-responsive" src="images/security2.png" alt="Idea"/>
+                            <img data-aos="flip-up" className="img-responsive" src="images/2-GIf.gif" alt="Idea"/>
                            
                             
                         </div>
                         <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="250">
-                            <img data-aos="flip-right" className="img-responsive" src="images/communication3.png" alt="Solution" />
+                            <img data-aos="flip-right" className="img-responsive" src="images/3-GIf.gif" alt="Solution" />
                             
                            
                         </div>
