@@ -51,11 +51,10 @@ export class Carusel extends React.Component {
           </div>
           
           <img src={propyLogo} alt='Propy' data-action="http://www.bbc.co.uk"/> 
-          <img src={vchainLogo} alt='Vchain' data-action="https://www.vchain.tech/"/>
           <img src= {solidLogo} alt='SolidBlocks' data-action="https://www.solidblock.co/"/>
+          <img src={vchainLogo} alt='Vchain' data-action="https://www.vchain.tech/"/>
           <img src={augmindLogo} alt='Augmind' data-action="https://www.augmind.me/"/>
           
-          <img src={hydroLogo} alt='Hydro' data-action="http://www.bbc.co.uk"/>
         </Coverflow>
       </div>
     );

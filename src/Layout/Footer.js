@@ -16,7 +16,7 @@ constructor(props){
            <div className="container">
               <div className="row text-center">
                  <div className="col-md-6 offset-md-3">
-                    <h4 className="section-title-md">Don't miss out, Stay updated</h4>
+                    <h4 className="section-title-md">Stay updated</h4>
                     <form id="mc4wp-form-1"onSubmit={this.handlemailchimpSubmit} className="mc4wp-form mc4wp-form-204" method="post" data-id="204" data-name="ICO Form">
                        <div className="mc4wp-form-fields"><input type="email" name="EMAIL" className="input-round required email" value={this.state.mailchimpemail} onChange={this.handleMailchimpEmail} placeholder="Enter your email address" required="" />
                           <button type="submit" className="btn" style={{marginTop: "5px"}}>Subscribe</button>

@@ -235,21 +235,21 @@ The platform provides a real-time overview of the project's roadmap and an effic
             </div>
           </div>
           <div className="col-md-12">
-            <div className="ct-process">
+            {/* <div className="ct-process"> */}
                 <div className="row">
                     <div className="display-table">
                         
-                        <div  className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="50">
+                        <div  className="table-cell text-center animated activate bounceIn  registervisible">
                             <img data-aos="flip-left" className="img-responsive" src="images/1-GIf.gif" alt="Research"/>
                             
                            
                         </div>
-                        <div  className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="150">
+                        <div  className="table-cell text-center animated activate bounceIn  registervisible" >
                             <img data-aos="flip-up" className="img-responsive" src="images/2-GIf.gif" alt="Idea"/>
                            
                             
                         </div>
-                        <div className="table-cell text-center animated activate bounceIn undefined registervisible" data-fx="bounceIn" data-time="250">
+                        <div className="table-cell text-center animated activate bounceIn  registervisible">
                             <img data-aos="flip-right" className="img-responsive" src="images/3-GIf.gif" alt="Solution" />
                             
                            
@@ -258,7 +258,7 @@ The platform provides a real-time overview of the project's roadmap and an effic
                     </div>
                     <div className="clearfix"></div>
                 </div>
-            </div>
+            {/* </div> */}
          
             <div data-animate="fadeInUp" data-delay="0.3" className="res-m-bttm-lg wpb_column vc_column_container vc_col-sm-6 vc_col-md-4 animated fadeInUp visiblty"><div className="vc_column-inner "><div className="wpb_wrapper">
               <div className="wpb_text_column wpb_content_element  text-center">
@@ -340,10 +340,11 @@ The platform provides a real-time overview of the project's roadmap and an effic
                   <input type="text" placeholder="Search.." name="search" />
                 </div>
                 <div data-aos="zoom-in">
-               <Carusel  />
               </div>
             </div>
           </div>
+          <Carusel  />
+
         </section>
     
         <section id="who_we_are" className="vc_rows wpb_row vc_row-fluid section section-pad section-bg-alt section-fix">
@@ -374,13 +375,12 @@ The platform provides a real-time overview of the project's roadmap and an effic
                             </div>
 
                             <div className="vc_row wpb_row vc_inner vc_row-fluid">
-                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
+                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3  ">
                                 <div className="vc_column-inner ">
                                   <div className="wpb_wrapper">
                                     <div data-aos="zoom-in-right" className="team-circle text-center">
                                         <div className="team-photo">
                                             <img src="images/1.png" alt="" />
-                                            <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/waylon-dalton/" className="expand-trigger content-popup"></span>
                                         </div>
                                         <div className="team-info">
                                             <h5 className="team-name">Nir Samocha</h5>
@@ -394,12 +394,11 @@ The platform provides a real-time overview of the project's roadmap and an effic
                               </div>
                               
 
-                              <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
+                              <div className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3  "><div className="vc_column-inner ">
                                 <div className="wpb_wrapper">
                                     <div data-aos="zoom-in-up" className="team-circle text-center">
                                       <div className="team-photo">
                                           <img src="images/2.png" alt="" />
-                                          <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/moises-teare/" className="expand-trigger content-popup"></span>
                                       </div>
                                       <div className="team-info">
                                           <h5 className="team-name">Robi Dayan</h5>
@@ -410,13 +409,12 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                   </div>
                                 </div>
                               </div>
-                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp">
+                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3  ">
                                 <div className="vc_column-inner ">
                                   <div className="wpb_wrapper">
                                     <div data-aos="zoom-in-down" className="team-circle text-center">
                                         <div className="team-photo">
                                             <img src="images/3.png" alt="" />
-                                            <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/stefan-harary/" className="expand-trigger content-popup"></span>
                                         </div>
                                         <div className="team-info">
                                             <h5 className="team-name">Alex Perry</h5>
@@ -427,12 +425,11 @@ The platform provides a real-time overview of the project's roadmap and an effic
                                   </div>
                                 </div>
                               </div>
-                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 animated fadeInUp"><div className="vc_column-inner ">
+                              <div  className="wpb_column vc_column_container vc_col-sm-6 vc_col-md-3 "><div className="vc_column-inner ">
                                 <div className="wpb_wrapper">
                                     <div data-aos="zoom-in-left" className="team-circle text-center">
                                       <div className="team-photo">
                                           <img src="images/4.png" alt="" />
-                                          <span data-mfp-src="http://wpdemo.oceanthemes.net/icos/team/moises-teare/" className="expand-trigger content-popup"></span>
                                       </div>
                                       <div className="team-info">
                                           <h5 className="team-name">Robert Hitchens</h5>
