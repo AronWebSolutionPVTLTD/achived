@@ -32,8 +32,8 @@ constructor(props){
         <footer className="section footer-section section-pad-sm section-bg">
    <div className="container">
       <div className="row text-center">
-      <div className="card-footer"><a href="/">Terms of use</a></div>
-      <div className="card-footer"><a href="/">Privacy policy</a></div>
+      {/* <div className="card-footer"><a href="/">Terms of use</a></div>
+      <div className="card-footer"><a href="/">Privacy policy</a></div> */}
          <div className="col-md-12">
          
             <ul className="social">
